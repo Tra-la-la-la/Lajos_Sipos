@@ -19,7 +19,7 @@ public class playingWithStrings {
          to be difference one from each other */
 
         String thisString = "Your inserted string is this one.";
-        thisString = thisString.concat("\0"); // our inserted string will be returned by concat as return a char sequence
+        thisString = thisString.concat("\0"); // our inserted string will be returned by concat as return a char sequence of null
         char y[] = thisString.toCharArray(); //the array of the character "y" represents the "thisString" as a String
         int count = 0; // the iteration will be accounted from the position 0, as the arrays start to be accounted from 0
         int i = 0; // this integer i will represent in our cases the position of each character in the array of characters "y", which represent our inserted String

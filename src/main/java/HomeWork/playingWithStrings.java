@@ -92,37 +92,38 @@ public class playingWithStrings {
 
         /** 6. how to convert lower case to uppercase and uppercase to lower case*/
 
-//        String x = "Your inserted string is this one.";
-//        char y[] = x.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
-//        int size = y.length; /** as this line it's used above I won't reuse it, just call it*/
-//        int i = 0; /** as this line it's used above I won't reuse it, just call it*/
-        while (i != size) {// i not equal to size assure us to travel to the entire length of the String
-            y[i] = (char) (y[i] - 32); // this is to convert lower case to uppercase as: from http://www.asciitable.com/ the char "a" have the code "96" - 32
+        String xString = "Your inserted string is this one.";
+        char c[] = xString.toCharArray();
+        int sizeC = c.length;
+        int inT = 0;
+        while (inT != sizeC) {
+            c[inT] = (char) (c[inT] - 32); // this is to convert lower case to uppercase as: from http://www.asciitable.com/ the char "a" have the code "96" - 32
             // (32 represents the difference in the position between lower and upper cases characters) in the same table for the char "A", and so on.
-            y[i] = (char) (y[i] + 32); /** this will convert the uppercase to lowercase*/ // certainly won't be used followed by converting to uppercase method
-            i++; // incrementing i to stop the loop
+            c[inT] = (char) (c[inT] + 32); /** this will convert the uppercase to lowercase*/ // certainly won't be used followed by converting to uppercase method
+            inT++; // incrementing inT to stop the loop
         }
-        System.out.println("The result is: " + x);
-        System.out.println("The result is: " + y);
+        System.out.println("The result is: " + xString);
+        System.out.println("The result is: " + c);
 
         /** 7. How to extract or to change only the first letter from a string in to a upper case */
-//        String x = "Your inserted string is this one.";
-//        char y[] = x.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
-//        int size = y.length; /** as this line it's used above I won't reuse it, just call it*/
-//        int i = 0; /** as this line it's used above I won't reuse it, just call it*/
 
-        y[0] = (char) (y[0] - 32); // as the array of char y have the first char on the position 0, ch
-        i = 1;
+        String xWord = "Your inserted string is this one.";
+        char d[] = xWord.toCharArray();
+        int sizeD = d.length;
+        int inp = 0;
 
-        while (i != size) {// i not equal to size assure us to travel to the entire length of the String
-            if (y[i] == ' ') { // if in the array of char i it's a blank spot, than
-                y[i + 1] = (char) (y[i + 1] - 32); // the first char after the blank spot it's will change the char to a upper case char
+        d[0] = (char) (d[0] - 32); // as the array of char y have the first char on the position 0, ch
+        inp = 1;
+
+        while (inp != sizeD) {// i not equal to size assure us to travel to the entire length of the String
+            if (d[inp] == ' ') { // if in the array of char "d" the int "inp" it's a blank spot, than
+                d[inp + 1] = (char) (d[inp + 1] - 32); // the first char after the blank spot it's will change the char to a upper case char
             }
-            i++;
+            inp++;
         }
 
-        System.out.println("Your result is " + x );
-        System.out.println("Your result is " + y );
+        System.out.println("Your result is " + xWord );
+        System.out.println("Your result is " + d );
 
         /** 8. How to print duplicate characters in a present String using Maps */
 
@@ -132,21 +133,22 @@ public class playingWithStrings {
          the TreeMap sorts the map in alphabetical order
          */
         String anotherString = "Your inserted string is this one.";
-//        char y[] = anotherString.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
-//        int size = y.length; /** as this line it's used above I won't reuse it, just call it*/
-//        int i = 0; /** as this line it's used above I won't reuse it, just call it*/
+        char f[] = anotherString.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
+        int sizeF = f.length; /** as this line it's used above I won't reuse it, just call it*/
+        int inP = 0; /** as this line it's used above I won't reuse it, just call it*/
 
         anotherString = anotherString.replace(" ", ""); // with the replace method: ex a = a.replace(" ","") we eliminate the empty spaces
-        i = 0;
-        Map<Character, Integer> map = new LinkedHashMap<>(); // this LinkedHashMap will get the String in to it in order to be able to check the values for each character from the string
-        while (i != size) {// i not equal to size assure us to travel to the entire length of the String
-            if (map.containsKey(y[i]) == false) { // if our map contains in the array of the string y and input i which equals false
-                map.put(y[i], 1); // the map will put the character i in the string y with value 1
+        inP = 0;
+        Map<Character, Integer> map = new LinkedHashMap<>(); // this LinkedHashMap will get the String in to it in order to be able to check the values for each character
+        // from the string
+        while (inP != sizeF) {// "inP" not equal to size assure us to travel to the entire length of the String
+            if (map.containsKey(f[inP]) == false) { // if our map contains in the array of the string "f" and input "inP" which equals false
+                map.put(f[inP], 1); // the map will put the character "inP" in the string "f" with value 1
             } else {
-                int oldVlaue = map.get(y[i]); // and so will the value of the character i in the string y,
-                int newValue = oldVlaue + 1; // as a new value with +1; and so if any character will repeat, each time is repeating increments it's value with 1
+                int oldVlaue = map.get(f[inP]); // and so will the value of the character "inP" in the string "f",
+                int newValue = oldVlaue + 1; // as a new value with +1; and so if any character will repeat, each time is repeating it's
             }
-            i++;
+            inP++; // increments the value with 1
         }
 
         Set<Map.Entry<Character, Integer>> thisMap = map.entrySet();
@@ -224,26 +226,26 @@ public class playingWithStrings {
 
         pangramString = pangramString.replace(" ", ""); // with the replace method: ex a = a.replace(" ","") we eliminate the empty spaces
 
-//        char y[] = pangramString.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
-//        int size = y.length; /** as this line it's used above I won't reuse it, just call it*/
-//        int i = 0; /** as this line it's used above I won't reuse it, just call it*/
-        int p[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; //we initialised and array for a integer p with length of 26, with all positions on 0,
+        char g[] = pangramString.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
+        int sizeG = g.length; /** as this line it's used above I won't reuse it, just call it*/
+        int input = 0; /** as this line it's used above I won't reuse it, just call it*/
+        int p[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; //we initialised and array for a integer "p" with length of 26, with all positions on 0,
         // as to letter was checked yet
-        i = 0; // i will start from the index of 0
+        input = 0; // "input" will start from the index of 0
 
-        while (i != size) {// i not equal to size assure us to travel to the entire length of the String
-            int index = y[i] - 65; //we appeal from the ascii code the position of each letter from A to Z (minus) -65 in order to give to each letter a position from 0 to 25
+        while (input != sizeG) {// i not equal to size assure us to travel to the entire length of the String
+            int index = g[input] - 65; //we appeal from the ascii code the position of each letter from A to Z (minus) -65 in order to give to each letter a position from 0 to 25
             // where 25 represents the Z, as the maximum number of the english alphabet letters are 26,
-            // here the array of the character "y" represents the inserted String which will be checked
+            // here the array of the character "g" represents the inserted String which will be checked
             p[index] = 1; // so here in our new index which is ex: ascii code A have the code: 65 minus 65 will return in an array as the input 0 so Z will have 25, and the total
             // length of the array for comparison will be of the 26 characters
-            i++; // incrementing the i
+            input++; // incrementing the "input"
         }
         System.out.println("The result is: " + pangramString);
 
-        while (i != 26) { // the maximum numbers of letters in the english alphabet
-            if (p[i] == 1) { //if in our list with 26 positions the input represented by "i" for each letter from the inserted string equals to 1
-                i++; // increment the i in order to check all the letters from the string, and if all are changed from 0 to 1, the result will be: "This is a pangram."
+        while (input != 26) { // the maximum numbers of letters in the english alphabet
+            if (p[input] == 1) { //if in our list with 26 positions the input represented by "input" for each letter from the inserted string equals to 1
+                input++; // increment the i in order to check all the letters from the string, and if all are changed from 0 to 1, the result will be: "This is a pangram."
             } else { // else if any position from the 26 from the array of the integer "p" it's 0, the result is: "not a pangram!"
                 System.out.println("not a pangram!");
                 System.exit(0);
@@ -254,26 +256,26 @@ public class playingWithStrings {
         /** 12. Check if a String has ALL UNIQUE CHARACTERS */
 
         String stillAString = "Your inserted string is this one.";
-//        char y[] = stillAString.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
-//        int size = y.length; /** as this line it's used above I won't reuse it, just call it*/
-//        int i = 0; /** as this line it's used above I won't reuse it, just call it*/
+        char h[] = stillAString.toCharArray(); /** as this line it's used above I won't reuse it, just call it*/
+        int sizeH = h.length; /** as this line it's used above I won't reuse it, just call it*/
+        int inPUT = 0; /** as this line it's used above I won't reuse it, just call it*/
 
         stillAString = stillAString.replace(" ", ""); // with the replace method: ex a = a.replace(" ","") we eliminate the empty spaces
-        i = 0;
+        inPUT = 0;
         Map<Character, Integer> newMap = new HashMap<>(); // this LinkedHashMap will get the String in to it in order to be able to check the values for each character from the string
-        while (i != size) {
-            if (newMap.containsKey(y[i]) == false) { //if our map contains a key in our array y with the inputs represented by i, which are false
-                newMap.put(y[i], 1); // our map will put the new value to 1
+        while (inPUT != sizeH) {
+            if (newMap.containsKey(h[inPUT]) == false) { //if our map contains a key in our array "h" with the inputs represented by "inPUT", which are false
+                newMap.put(h[inPUT], 1); // our map will put the new value to 1
             } else {
-                int oldvlaue = newMap.get(y[i]);
-                int newvale = oldvlaue + 1; // we increment the value of each char from our array y of inputs i, represented by the inserted String with each repetition of the same value
-                newMap.put(y[i], newvale);
+                int oldvlaue = newMap.get(h[inPUT]);
+                int newvale = oldvlaue + 1; // we increment the value of each char from our array "h" of inputs "inPUT", represented by the inserted String with each repetition of the same value
+                newMap.put(h[inPUT], newvale);
             }
-            i++;
+            inPUT++;
         }
 
         Set<Map.Entry<Character, Integer>> fromThisNewMap = newMap.entrySet();
-        for (Map.Entry<Character, Integer> data : fromThisNewMap) { // this for each loop verifies each iteration of the values in our string (array y of characters, with inputs i)
+        for (Map.Entry<Character, Integer> data : fromThisNewMap) { // this for each loop verifies each iteration of the values in our string (array "h" of characters, with inputs "inPUT")
             if (data.getValue() > 1) {
                 System.out.println("Doesn't contain only unique characters");
                 System.exit(0);

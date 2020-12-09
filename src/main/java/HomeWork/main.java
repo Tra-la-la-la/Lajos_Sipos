@@ -6,9 +6,9 @@ public class main {
     public static void main(playingWithStrings[] args) {
 
         System.out.println("PLease insert your data as: \n" +
-                "for integer: 42\n" +
-                "for double: 3.1415\n" +
-                "for String: Welcome to HackerRank's Java tutorials!" +
+                "for integer: 10\n" +
+                "for double: 1.1234\n" +
+                "for String: This is a text" +
                 ": \n");
 
         Scanner scan = new Scanner(System.in);

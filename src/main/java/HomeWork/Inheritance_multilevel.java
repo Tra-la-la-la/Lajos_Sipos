@@ -49,3 +49,20 @@ class Novels extends myBookCatalog {
         System.out.println("This is the third class.");
     }
 }
+
+class ArtAlbums {
+
+    public void setS(String s) {
+        System.out.println("insert the name: ");
+    }
+
+    public static void main(String[] args) {
+
+        String name;
+        int pages;
+
+
+    }
+
+
+}

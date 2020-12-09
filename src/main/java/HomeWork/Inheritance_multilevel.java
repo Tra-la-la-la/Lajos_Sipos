@@ -4,6 +4,41 @@ public class Inheritance_multilevel { //This is our main class where we appeal a
     void mainClass(){
         System.out.println("Why did I complicated this?!");
     }
+
+    String tile;
+    String name;
+    int numberOfPages;
+
+    public Inheritance_multilevel(String tile, String name, int numberOfPages) {
+        this.tile = tile;
+        this.name = name;
+        this.numberOfPages = numberOfPages;
+    }
+
+    public String getTile() {
+        return tile;
+    }
+
+    public void setTile(String tile) {
+        this.tile = tile;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getNumberOfPages() {
+        return numberOfPages;
+    }
+
+    public void setNumberOfPages(int numberOfPages) {
+        this.numberOfPages = numberOfPages;
+    }
+
     public static void main(String[] args) { // the public static void main(String[] args) method
 
         System.out.println("\n"+" T h i s   i s   a   n e w   l i n e . ");
@@ -30,6 +65,10 @@ public class Inheritance_multilevel { //This is our main class where we appeal a
     }
 }
 class myLibraryCatalog extends Inheritance_multilevel{
+    public myLibraryCatalog(String tile, String name, int numberOfPages) {
+        super(tile, name, numberOfPages);
+    }
+
     void firstClass() { /*This is the prime base class. And this is not necessary to extend any other classes. However, " +
                 "I like to play, and so: this class extends the Inheritance_multilevel class," +
                 "and so this class extends the second class, which extends the third class. It's quite nice in here here! */
@@ -38,6 +77,10 @@ class myLibraryCatalog extends Inheritance_multilevel{
 }
 
 class myBookCatalog extends myLibraryCatalog {
+    public myBookCatalog(String tile, String name, int numberOfPages) {
+        super(tile, name, numberOfPages);
+    }
+
     void secondClass() { /*This is the second class, which appeals the first class, which appeal the main class Inheritance_multilevel. " +
                 "This class is appealed by the third class.*/
         System.out.println("This is the second class.");
@@ -45,6 +88,10 @@ class myBookCatalog extends myLibraryCatalog {
 }
 
 class Novels extends myBookCatalog {
+    public Novels(String tile, String name, int numberOfPages) {
+        super(tile, name, numberOfPages);
+    }
+
     void thirdCLass(){/* This is the third class, which appeals the second class, which appeal the first class, which appeal the main Inheritance_multilevel class.*/
         System.out.println("This is the third class.");
     }
@@ -55,14 +102,5 @@ class ArtAlbums {
     public void setS(String s) {
         System.out.println("insert the name: ");
     }
-
-    public static void main(String[] args) {
-
-        String name;
-        int pages;
-
-
-    }
-
 
 }

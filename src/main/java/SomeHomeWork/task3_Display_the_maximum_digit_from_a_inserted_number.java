@@ -1,10 +1,10 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
 public class task3_Display_the_maximum_digit_from_a_inserted_number {
 
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
 
         /**3. Display the max digit from a number, read the number from keyboard.*/
 

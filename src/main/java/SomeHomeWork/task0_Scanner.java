@@ -1,8 +1,8 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
-public class scanner {
+public class task0_Scanner {
 
     Scanner scan = new Scanner(System.in);
 
@@ -50,7 +50,7 @@ public class scanner {
         System.out.println("This input will set a scanner ");
     }
 
-    public scanner(Scanner scan) {
+    public task0_Scanner(Scanner scan) {
         if (scan.hasNextInt()) { /** read in int value*/
             i = scan.nextInt();
         } else if (scan.hasNextLine()) { /** read in String value*/

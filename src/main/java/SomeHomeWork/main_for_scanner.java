@@ -1,9 +1,9 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
-public class main {
-    public static void main(playingWithStrings[] args) {
+public class main_for_scanner {
+    public static void main(task17_About_Strings[] args) {
 
         System.out.println("PLease insert your data as: \n" +
                 "for integer: 10\n" +

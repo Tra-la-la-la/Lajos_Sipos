@@ -1,8 +1,8 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.*;
 
-public class playingWithStrings {
+public class task17_About_Strings {
 
     public static void main(String[] args) {
 

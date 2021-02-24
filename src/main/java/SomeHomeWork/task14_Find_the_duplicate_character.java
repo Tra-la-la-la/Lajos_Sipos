@@ -1,4 +1,4 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -30,7 +30,7 @@ public class task14_Find_the_duplicate_character {
         /** so, we are adding the compared value of "integer n" as a value in "myArray" array*/return x;
     }
 
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
         /**3. Write a Java method to find the duplicate characters in a string. (Hint use str.toCharArray() to split the string into an array of characters)*/
         Scanner insertData = new Scanner(System.in); /** We created a scanner to insert different inputs */
 

@@ -1,4 +1,4 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ public class task9_Remote_the_duplicate_elements_of_an_array_and_return_the_leng
         return x; /**we request to return the value of "n" which is different than "i", which is different than "n"*/
     }
 
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
 
         /**9. Write a Java program to remove the duplicate elements of a given array and return the new length of the array.
          Sample array: [20, 20, 30, 40, 50, 50, 50]

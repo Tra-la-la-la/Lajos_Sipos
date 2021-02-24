@@ -1,9 +1,9 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
 public class task11_Print_the_number_of_the_days_specific_to_each_month_in_a_year {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
         /**11. Print the number of days specific to each month in year.
          input: Month (string) of index of the month(1, 2, ... 12)
          output: 31, 30, 28*/

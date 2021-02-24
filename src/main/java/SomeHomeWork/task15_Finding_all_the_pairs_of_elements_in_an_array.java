@@ -1,7 +1,7 @@
-package HomeWork;
+package SomeHomeWork;
 
 public class task15_Finding_all_the_pairs_of_elements_in_an_array {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
         /**4. Write a Java method to find all pairs of elements in an array whose sum is equal to
          * a given number.*/
         int arr[] = {3, 2, 15, 4, 14, 16, 7, 8, 9, 10, 17, 18, 1, 13, 11, 5, 6, 12, 20, 19};

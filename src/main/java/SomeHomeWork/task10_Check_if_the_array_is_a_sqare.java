@@ -1,7 +1,7 @@
-package HomeWork;
+package SomeHomeWork;
 
 public class task10_Check_if_the_array_is_a_sqare {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
         /**10. Write a method that checks if the array is square (i.e. every row has the same length as a itself).
          a. for input:
 

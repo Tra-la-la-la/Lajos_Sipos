@@ -1,9 +1,9 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
 public class task13_Fibonacci_series {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
 
         /**2. Write a Java method to print the first 25 terms of the Fibonacci series (without recursion).*/
 

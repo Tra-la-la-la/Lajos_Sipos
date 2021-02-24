@@ -1,8 +1,8 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
-public class task1_Calculate_the_sum_of_the_inserted_number_from_0_and_1 extends scanner {
+public class task1_Calculate_the_sum_of_the_inserted_number_from_0_and_1 extends task0_Scanner {
 
     public task1_Calculate_the_sum_of_the_inserted_number_from_0_and_1(Scanner i) {
         super(i);

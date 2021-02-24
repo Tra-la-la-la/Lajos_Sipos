@@ -1,11 +1,11 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.LinkedHashMap; //used for the second program
 import java.util.Map; // used for the first program
 import java.util.Set;
 
-public class sortArray {
-    public static void main(playingWithStrings[] args) {
+public class task16_SortArray {
+    public static void main(task17_About_Strings[] args) {
         int[] myArray = {15, 5, 87, 68, 46, 860, 98};
         int y = myArray.length;
 

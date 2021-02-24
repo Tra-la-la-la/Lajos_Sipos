@@ -1,7 +1,7 @@
-package HomeWork;
+package SomeHomeWork;
 
 public class task2_Display_the_smallest_number_from_an_array {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
 
         /**2. Display the smallest number from an array of numbers (2 versions: with normal for and with foreach)*/
 

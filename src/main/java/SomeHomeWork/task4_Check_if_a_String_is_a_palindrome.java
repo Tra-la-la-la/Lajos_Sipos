@@ -1,9 +1,9 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
 public class task4_Check_if_a_String_is_a_palindrome {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
         /**git p4. Check if a number is palindrom ( e.g palindrom 1221, 34143), read the number from keyboard.*/
 
         String insertedData;

@@ -1,9 +1,9 @@
-package HomeWork;
+package SomeHomeWork;
 
 import java.util.Scanner;
 
 public class task5_Display_all_the_prime_numbers_lower_than_the_inserted_number {
-    public static void main(playingWithStrings[] args) {
+    public static void main(task17_About_Strings[] args) {
         /**5. Display all the prime numbers lower than a given number, read the number from keyboard*/
 
         System.out.println("Please insert a number in order to return the prime numbers until your inserted number: ");
@@ -14,7 +14,7 @@ public class task5_Display_all_the_prime_numbers_lower_than_the_inserted_number 
         System.out.println("The number you inserted it is something I don't understand in math: " + insertedNumber);
         } else {
         System.out.println("The number you inserted " + insertedNumber + " it is the same thing which I don't understand in math yet.");
-        }*/
+        }*/ // for odd numbers a funny video: https://www.youtube.com/watch?v=U6VBV4QUMu0&ab_channel=Vsauce
 
         int i, x, startToAccountFrom; /** We created 3 different integers as i, x, and startToAccountFrom to have a reference to account the prime numbers */
 
